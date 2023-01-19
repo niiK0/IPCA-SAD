@@ -20,7 +20,6 @@ if(isset($_SESSION['name'])){
 
     if($result->num_rows > 0){
       echo  "<script>alert('User already exists!');</script>";
-      header("location: index.php");
     }else{
       $sql_create = "INSERT INTO user(email, pin, name, nif) VALUES ('$email', $pin, '$name', $nif)";
       if ($conn->query($sql_create) === TRUE) {
