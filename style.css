@@ -1,0 +1,233 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 25px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+}
+
+nav li:nth-child(n+2){
+  margin-left: auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  margin-bottom: 20px;
+}
+
+#dish-list, #reservation-list, #login-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#dish-list > div, #reservation-list > div {
+  margin-right: 20px;
+}
+
+.cardboard-form-reserve{
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 6em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.cardboard-form-reserve-items-container{
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.2); */
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 95%;
+  height: 20em;
+  visibility: hidden;
+}
+
+#reserve-item{
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-right: 1em;
+  /* justify-content: center; */
+  width: 12em;
+}
+
+.reserve-item-type{
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3d498f;
+  color: #202855;
+}
+
+.reserve-item-title{
+  font-size: 1.1em;
+  font-weight: bolder;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.reserve-item-desc{
+  font-size: 0.9em;
+  text-align: start;
+  padding-left: 20px;
+  height: 37%;
+}
+
+
+.cardboard-form-reserve ul {
+  list-style-type: none;
+  margin: auto, 30px;
+  padding: 0;
+}
+
+.cardboard-form-reserve ul li {
+  margin-right: 20px;
+  font-size: 20px;
+  height: 100px;
+  background-color: #e5e5e5;
+}
+
+.cardboard-form-reserve-nav{
+  background-color: #e5e5e5;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardboard-form-reserve label {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /* padding-right: 20px; */
+  padding-left: 20px;
+}
+
+.cardboard-form-reserve select{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.cardboard-form-reserve input[type="submit"], .cardboard-form-reserve input[type="button"]{
+  background-color: #3d498f;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.cardboard-form{
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 6em;
+  text-align: center;
+  display: block;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.link-register{
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+}
+
+.cardboard-form label {
+  margin-bottom: 10px;
+}
+
+.cardboard-form input[type="email"], .cardboard-form input[type="password"], .cardboard-form input[type="text"], .cardboard-form input[type="number"]{
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardboard-form input[type="submit"]{
+  background-color: #3d498f;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+}
